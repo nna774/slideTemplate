@@ -1,0 +1,49 @@
+(html (@lang "ja") (* This document is translated from S-exp by HtSExp( https://github.com/nna774/htsexp ). See original file *.htsexp. *)
+    (head
+        (title "すごいタイトル")
+        
+        (meta (@charset "utf-8"))
+        (meta (@name "apple-mobile-web-app-capable") (@content "yes"))
+        (meta (@name "apple-mobile-web-app-status-bar-style") (@content "black-translucent"))
+        (meta (@name "viewport") (@content "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"))
+        
+        (link (@rel "stylesheet") (@href "css/reveal.css"))
+        (link (@rel "stylesheet") (@href "css/theme/default.css") (@id "theme"))
+
+        (script
+            "document.write( '<link rel=\"stylesheet\" href=\"css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css\" type=\"text/css\" media=\"print\">' );"
+        )
+        
+        (style (@type "text/css") 
+            (* 
+                .red{ color: red; };
+            *)
+        )
+    )
+
+    (body
+        (div (@class "reveal")
+        (div (@class "slides")
+            (section
+                (h1 "めっちゃすごいスライド")
+                (h6 "KMC 1回 nona7")
+            )
+        )
+        )
+
+        (script (@src "lib/js/head.min.js"))
+        (script (@src "js/reveal.min.js"))
+
+        (script
+            "Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                width : '90%',
+                height : '90%'
+             });"
+        )
+    )
+)
